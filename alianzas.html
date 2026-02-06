@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alianzas - Papas pa'Papas</title>
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fefefe 0%, #f5f5f5 100%);
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #8B4513, #D2B48C);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      margin-bottom: 40px;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+    }
+
+    .alianzas-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px 20px;
+    }
+
+    .alianzas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .alianza-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .alianza-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .alianza-header {
+      background: linear-gradient(135deg, #8B4513, #D2B48C);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .alianza-icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .alianza-header h3 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .alianza-content {
+      padding: 20px;
+    }
+
+    .alianza-content p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .beneficios {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    .beneficio-item {
+      color: #8B4513;
+      margin: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .beneficio-item:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .secciones {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .secciones h2 {
+      color: #8B4513;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #FFD700;
+      padding-bottom: 10px;
+    }
+
+    .secciones p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #8B4513;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="Index.html" class="logo"><img src="Assets/Logo/Logo.png" width= "500" height="225"  alt="Logo" class="logo-img" title="Volver atrás"></a>
+      </a>
+      <ul>
+        <li><a href="menu_papas.html">Productos</a></li>
+        <li><a href="alianzas.html">Alianzas</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="acerca_de.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Nuestras Alianzas Estratégicas</h1>
+    <p>Partnerships que fortalecen nuestro compromiso con la calidad</p>
+  </div>
+
+  <div class="alianzas-container">
+    <div class="alianzas-grid">
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">🏪</div>
+          <h3>Retail & Distribución</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Alianzas con las principales cadenas de supermercados y distribuidores locales para garantizar que nuestras papas lleguen frescos a tu hogar.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Disponibilidad en 200+ puntos de venta</div>
+            <div class="beneficio-item">Entregas semanales garantizadas</div>
+            <div class="beneficio-item">Productos siempre frescos</div>
+            <div class="beneficio-item">Precios competitivos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">👨‍🍳</div>
+          <h3>Sector Gastronómico</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Colaboración con restaurantes, hoteles y catering para proporcionar papas de calidad premium que realcen sus platillos.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Programa B2B especial</div>
+            <div class="beneficio-item">Precios mayoristas preferentes</div>
+            <div class="beneficio-item">Suministro confiable</div>
+            <div class="beneficio-item">Asesoramiento personalizado</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">🏭</div>
+          <h3>Industria de Procesados</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Partnership con empresas de alimentos procesados para la elaboración de papas fritas, congeladas y otros productos derivados.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Volúmenes grandes de suministro</div>
+            <div class="beneficio-item">Contrataciones a largo plazo</div>
+            <div class="beneficio-item">Control de calidad riguroso</div>
+            <div class="beneficio-item">Flexibilidad en especificaciones</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">🌱</div>
+          <h3>Sector Agrícola</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Cooperación con otros productores agrícolas y asociaciones para fortalecer la cadena de suministro agrícola regional.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Compartir conocimientos</div>
+            <div class="beneficio-item">Investigación conjunta</div>
+            <div class="beneficio-item">Mejora de variedades</div>
+            <div class="beneficio-item">Sustentabilidad colectiva</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">🎓</div>
+          <h3>Instituciones Educativas</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Programas de educación agrícola con universidades y escuelas técnicas para capacitación y investigación.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Proyectos de investigación</div>
+            <div class="beneficio-item">Becas para estudiantes</div>
+            <div class="beneficio-item">Prácticas profesionales</div>
+            <div class="beneficio-item">Talleres y seminarios</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alianza-card">
+        <div class="alianza-header">
+          <div class="alianza-icon">🌍</div>
+          <h3>Organismos de Sustentabilidad</h3>
+        </div>
+        <div class="alianza-content">
+          <p>Compromiso con organizaciones ambientales para asegurar prácticas agrícolas responsables y sostenibles.</p>
+          <div class="beneficios">
+            <div class="beneficio-item">Certificaciones ambientales</div>
+            <div class="beneficio-item">Programas de reforestación</div>
+            <div class="beneficio-item">Reducción de huella carbono</div>
+            <div class="beneficio-item">Conservación de recursos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secciones">
+      <h2>¿Por qué nuestras Alianzas?</h2>
+      <p>
+        En Papas pa'Papas, creemos que las alianzas estratégicas son fundamentales para ofrecer un servicio integral. Nuestras asociaciones con diferentes sectores nos permiten:
+      </p>
+      <p>
+        <strong>Garantizar Calidad Constante:</strong> Trabajamos con socios que comparten nuestros estándares de excelencia, asegurando que cada producto que sale de nuestras manos cumple con los más altos criterios de calidad.
+      </p>
+      <p>
+        <strong>Innovación Continua:</strong> A través de la colaboración con instituciones educativas e industrias, estamos siempre a la vanguardia de nuevas técnicas y productos.
+      </p>
+      <p>
+        <strong>Responsabilidad Social:</strong> Nuestras alianzas incluyen compromiso con la comunidad y el medio ambiente, buscando un desarrollo sustentable a largo plazo.
+      </p>
+      <p>
+        <strong>Disponibilidad Asegurada:</strong> La red de distribución permite que nuestros productos estén disponibles donde y cuando los necesitas.
+      </p>
+    </div>
+
+    <div class="secciones">
+      <h2>Interesado en una Alianza?</h2>
+      <p>
+        Si tu empresa está interesada en formar una alianza estratégica con Papas pa'Papas, nos encantaría conocer tu propuesta. Nos especializamos en crear soluciones personalizadas que beneficien a ambas partes.
+      </p>
+      <p style="text-align: center; margin-top: 30px;">
+        <a href="contactanos.html" style="background: #8B4513; color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">
+          Contacta con nuestro equipo
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Papas pa'Papas - Todos los derechos reservados</p>
+    <p>📍 Ubicados en toda la región | 📞 +52 (123) 456-7890 | 📧 info@papaspapa.com</p>
+  </footer>
+</body>
+</html>
