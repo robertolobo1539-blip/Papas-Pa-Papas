@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de - Papas pa'Papas</title>
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/acerca.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fefefe 0%, #f5f5f5 100%);
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #8B4513, #D2B48C);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      margin-bottom: 40px;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #8B4513;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .equipo-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .miembro-equipo {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .miembro-equipo .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #D2B48C, #8B4513);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 15px;
+    }
+
+    .miembro-equipo h4 {
+      color: #8B4513;
+      margin: 10px 0;
+    }
+
+    .miembro-equipo p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="Index.html" class="logo"><img src="Assets/Logo/Logo.png" width= "500" height="225"  alt="Logo" class="logo-img" title="Volver atrás"></a>
+      </a>
+      <ul>
+        <li><a href="menu_papas.html">Productos</a></li>
+        <li><a href="alianzas.html">Alianzas</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="acerca_de.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Acerca de Papas pa'Papas</h1>
+    <p>Conoce nuestra historia, misión y valores</p>
+  </div>
+
+  <div class="acerca-container">
+    <section class="acerca-section">
+      <h2>Nuestra Historia</h2>
+      <p>
+        Papas pa'Papas nace en 2015 con la visión de proporcionar papas de la más alta calidad a los mercados locales y regionales. Iniciamos como una pequeña granja familiar, cultivando con técnicas tradicionales y cuidado especial en cada cosecha.
+      </p>
+      <p>
+        A lo largo de los años, hemos crecido significativamente, expandiendo nuestras operaciones y mejorando nuestros procesos de producción, sin comprometer nunca la calidad de nuestros productos.
+      </p>
+    </section>
+
+    <section class="acerca-section">
+      <h2>Nuestra Misión</h2>
+      <p>
+        Ser la empresa líder en la producción y distribución de papas premium en la región, ofreciendo productos de excelente calidad con variedad de tipos y tamaños, asegurando una distribución rápida y confiable que genere experiencias memorables en nuestros clientes.
+      </p>
+    </section>
+
+    <section class="acerca-section">
+      <h2>Nuestra Visión</h2>
+      <p>
+        Posicionar a Papas pa'Papas como la marca de confianza para papas de alta calidad, reconocida por su sabor, frescura y compromiso con la sustentabilidad. Queremos estar en la cocina de cada familia y restaurante como su primera opción.
+      </p>
+    </section>
+
+    <section class="acerca-section">
+      <h2>  Nuestros Valores</h2>
+      <div class="valores">
+        <div class="valor">
+          <h3>Sostenibilidad</h3>
+          <p>Comprometidos con prácticas agrícolas responsables y el cuidado del medio ambiente.</p>
+        </div>
+        <div class="valor">
+          <h3>Confianza</h3>
+          <p>Transparencia total en nuestros procesos y relaciones con clientes y proveedores.</p>
+        </div>
+        <div class="valor">
+          <h3>Calidad</h3>
+          <p>Exigencia constante en cada etapa de producción, cosecha y distribución.</p>
+        </div>
+        <div class="valor">
+          <h3>Innovación</h3>
+          <p>Continuamente buscamos mejoras tecnológicas para optimizar nuestros productos.</p>
+        </div>
+        <div class="valor">
+          <h3>Comunidad</h3>
+          <p>Apoyo a la comunidad local y contribución al desarrollo agrícola regional.</p>
+        </div>
+        <div class="valor">
+          <h3>Dedicación</h3>
+          <p>Pasión y esfuerzo en cada cosecha y en el servicio a nuestros clientes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="acerca-section">
+      <h2>👥 Nuestro Equipo</h2>
+      <p style="text-align: center; margin-bottom: 30px; color: #666;">
+        Un equipo dedicado de profesionales con experiencia en agricultura y negocios
+      </p>
+    </section>
+  </div>
+
+  <div class="equipo-container">
+    <div class="miembro-equipo">
+      <div class="avatar"></div>
+      <h4>Roberto Cruz</h4>
+      <p><strong>Fundador y CEO</strong></p>
+      <p>5 años de experiencia en agricultura y de Administracion de Empresa</p>
+    </div>
+
+    <div class="miembro-equipo">
+      <div class="avatar"></div>
+      <h4>Gael Perez</h4>
+      <p><strong>Gerente de Operaciones</strong></p>
+      <p>Especialista en gestión agrícola y de Software </p>
+    </div>
+
+    <div class="miembro-equipo">
+      <div class="avatar"></div>
+      <h4>Antonio Inzunza</h4>
+      <p><strong>Director de Ventas</strong></p>
+      <p>Experto en relaciones comerciales</p>
+    </div>
+  </div>
+
+  <div class="acerca-container">
+    <section class="acerca-section">
+      <h2>Reconocimientos</h2>
+      <p>
+        Mejor Productor de Papas 2023 - Asociación Agrícola Regional<br>
+        Certificación de Calidad ISO 9001<br>
+        Empresa Sustentable 2022 - Gobierno Local<br>
+        Producto Premium del Año 2021 - Revista Agrícola
+      </p>
+    </section>
+
+    <section class="acerca-section">
+      <h2>Impacto Social</h2>
+      <p>
+        En Papas pa'Papas creemos en dar back a la comunidad. Emplea a más de 50 familias locales, apoya programas educativos agrícolas, y es parte activa en iniciativas de sostenibilidad ambiental.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Papas pa'Papas - Todos los derechos reservados</p>
+    <p>Ubicados en toda la región | +52 (123) 456-7890 | info@papaspapa.com</p>
+  </footer>
+</body>
+</html>
