@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Producto</title>
+</head>
+
+<body>
+
+<h2>Registro de Producto</h2>
+
+<form method="post" action="registro.php">
+
+  Nombre:<br>
+  <input type="text" name="nombre" required><br><br>
+
+  Presentación:<br>
+  <input type="text" name="presentacion" required><br><br>
+
+  Precio:<br>
+  <input type="number" step="0.01" name="precio" required><br><br>
+
+  Descripción:<br>
+  <textarea name="descripcion" required></textarea><br><br>
+
+  <button type="submit">Guardar producto</button>
+
+</form>
+
+</body>
+</html>
