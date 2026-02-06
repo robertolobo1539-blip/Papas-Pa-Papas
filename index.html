@@ -1,26 +1,202 @@
-mi archivo index
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papas pa'Papas - Las mejores papas del mercado</title>
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/hero.css">
+  <link rel="stylesheet" href="CSS/textbox.css">
+  <link rel="stylesheet" href="CSS/carousel.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-	<link href="http://ico" type="image/x-icon" rel="shortcut icon">
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fefefe 0%, #f5f5f5 100%);
+      color: #333;
+    }
 
-	<title>Bienvenido A mi Index</title>
+    footer {
+      background: #8B4513;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
 
+    footer p {
+      margin: 10px 0;
+    }
 
+    .video-flotante {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      height: auto;
+      z-index: 1000;
+      background: #000;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .video-flotante video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .close-video {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: rgba(255,255,255,0.8);
+      border: none;
+      color: #000;
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #8B4513;
+      margin: 40px 0 30px 0;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body id="fondob">
-	<center>
-		<style>
+    <center>
+  <header>
+    <nav class="navbar">
+      <a href="Index.html" class="logo"><img src="Assets/Logo/Logo.png" width= "500" height="225"  alt="Logo" class="logo-img" title="Volver atrás"></a>
+      <ul>
+        <li><a href="menu_papas.html">Productos</a></li>
+        <li><a href="alianzas.html">Alianzas</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="acerca_de.html">Acerca de</a></li>
+      </ul>
+    </nav>
 
-			#fondob {
-				background:-webkit-radial-gradient(40% 60%, #d98cc1,#93cb9b);
-			}
-		</style>
-		<h1>Bienvenido a mi Mundo</h1>
-        <script>
-            document.write("Hoy es " + new Date());
-            escribir("Otra modificacion");
 
-</script>
+    <section class="hero">
+    <img src="Assets/Fotos/Empresa.png" alt="Empresa Papas pa'Papas" class="hero-image">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Empresa Papas pa' Papas</h1>
+        <p>El mejor sabor del Mundo</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cuadro de texto descriptivo -->
+  <div class="text-box">
+    <textarea id="descripcion" rows="12" readonly>Bienvenido a Papas pa'Papas, tu fuente confiable de papas de la más alta calidad. 
+
+Nuestra empresa se dedica a la producción y distribución de papas premium, cultivadas con los mejores estándares agrícolas y entregadas frescas a tu mesa.
+
+Objetivo:
+Posicionar a Papas pa'Papas como la marca líder en papas de excelente calidad, con variedad de tipos y tamaños, asegurando una distribución rápida y confiable que genere experiencias memorables en nuestros clientes.
+
+Nuestros productos incluyen:
+- Papas russet premium
+- Papas rojas selectas
+- Papas yukon gold
+- Papas para puré especiales
+- Papas orgánicas certificadas
+
+¡Conozca nuestros productos y únase a miles de clientes satisfechos!</textarea>
+  </div>
+
+  <!-- Carrusel de fotos -->
+  <div class="carousel" id="mainCarousel">
+    <button class="carousel-button prev" aria-label="Anterior">‹</button>
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide">
+            <img src="Assets/Fotos/Camion Papa.png" alt="Camion Papas pa'Papas">
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Fotos/Imagen Papa.png" alt="Tarto Directo Papas">
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Fotos/Papa.png" alt="Papas en el campo">
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Fotos/PapaDatos.png" alt="Campo de Papas">
+      </ul>
+    </div>
+    <button class="carousel-button next" aria-label="Siguiente">›</button>
+  </div>
+  <div class="carousel-dots" aria-hidden="false"></div>
+
+  <section class="section-title">
+  
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Papas pa'Papas - Todos los derechos reservados</p>
+    <p>Ubicados en toda la región | +52 (123) 456-7890 | info@papaspapa.com</p>
+  </footer>
+
+  <script>
+    // Carrusel
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const track = document.querySelector('.carousel-track');
+    const dotsContainer = document.querySelector('.carousel-dots');
+
+    // Crear puntos del carrusel
+    slides.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+
+    function updateCarousel() {
+      const offset = currentSlide * -100;
+      track.style.transform = `translateX(${offset}%)`;
+      
+      document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    document.querySelector('.carousel-button.next').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    });
+
+    document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    // Auto-avanzar cada 5 segundos
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    }, 5000);
+  </script>
+</body>
+</html>
